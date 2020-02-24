@@ -1,0 +1,152 @@
+
+body {
+	margin: 0;
+	color: black;
+	font-family: 'Lato';
+}
+
+/*inspired by https://www.w3schools.com/howto/howto_css_mixed_columns.asp */
+.col3{
+	float:left;
+	width: 33%;
+}
+
+.col2{
+	float:left;
+	width: 50%;
+	text-align: center;
+	padding-top: 150px;
+}
+
+.row:after{
+	content:'';
+	clear:both;
+	display: table;
+}
+
+.row .left{
+	text-align: left;
+	padding-top: 15px;
+}
+
+.row .right{
+	float:right;
+	padding-top: 15px;
+}
+
+.title {
+	font-size: 48px;
+	padding: 25px 100px;
+}
+
+.option{
+	text-align: center;
+	margin: 25px;
+}
+
+.basic{
+	font-size: 18px;
+	padding: 10px 100px;
+	display: inline-block;
+}
+
+.bold{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/*inspired by https://www.w3schools.com/howto/howto_css_full_page.asp */
+#home {
+	background-image: url("img/background_bun.jpg");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	text-align: center;
+}
+
+#home .center {
+	text-align: center;
+	color: white;
+	font-size: 96px;
+	font-weight: 900;
+	margin: auto;
+	position: absolute;
+	top: 20vw;
+	right: 50vh;
+}
+
+#home .caption {
+	font-style: italic;
+	font-size: 24px;
+}
+
+.button{
+	text-decoration: none;
+	background-color: #427FC0;
+	border: none;
+	color: white !important;
+	padding: 15px 30px;
+	font-weight: 700;
+	font-size: 36px;
+	margin-top: 20px;
+	display:inline-block;
+
+}
+
+/*********** HEADER ************/
+header {
+	text-align: center;
+	padding: 10px;
+	color: black;
+	font-family: 'Lato';
+}
+
+h1 {
+	margin: 0;
+}
+
+/*********** navigation bar ************/
+/*inspired by https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+#navbar {
+	background-color: #F7F2E8;
+	overflow: hidden;
+}
+
+#navbar a{
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+/*inrpised by https://github.com/creativetimofficial/material-kit/issues/107*/
+.nav-image {
+	width: 25px;
+	height: 10px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+/*********** navigation bar ************/
+/*inspired by https://www.w3schools.com/css/css_dropdowns.asp */
+.dropdown {
+	text-align: right;
+	display: inline-block;
+	padding-bottom: 40px;
+
+}
+
+.dropbtn{
+	background-color: #E5E5E5;
+	color: black;
+	padding: 15px 30px;
+	font-size: 18px;
+	border: none;
+	text-align: right;
+	margin-bottom: 0px;
+}
+
