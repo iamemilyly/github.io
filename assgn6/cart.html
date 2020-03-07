@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>Our Rolls</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="detail.js" type="text/javascript"></script> 
+</head>
+
+<body>
+	<div id="container">
+    
+    <header>
+    <div id="navbar">
+        <nav>
+        	<a href="index.html"><div class="nav-image"><img src="img/main_bun.png" class="img-fluid" alt="img"></div></a>
+            <a href="index.html">Bun Bun</a>
+         	<a href="cart.html" style="float: right; margin-right:10px; "><div class="nav-image"><img src="img/cart.png" class="img-fluid" alt="img"></div></a>
+            <a href="browsing.html" style="float: right">Our Rolls</a>
+            <a href="about.html" style="float: right">About us</a>
+        </nav>
+    </div>
+    </header>
+
+    <div class="row title" style="margin-top: 57px;">My Cart</div>
+
+    <div class="row basic">
+        <div class="col3"><img src="img/original.png" class="img-fluid cart-image" alt="img"></div>
+
+        <div class="col3" style="margin-left: 30vw; margin-top: -20vh;">
+            Original<br><br>
+            <span>glazing: <div id="glazing"></div>
+                quantity: <div id="qresult"></div></span>
+        </div>
+
+        <div class="col3 right" style="margin-left: 60vw; margin-top: -22vh;">
+            $<br><br>
+            <span>remove edit</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col3"></div>
+        <div class="col3"></div>
+        <div class="col3 right">
+            <span>Subtotal $<div id="price"></div> </span>
+            <p><span>Tax $<div id="tax"></div> </span></p>
+            <p><span class="bold">Total $<div id="total-price"></div></span></p>
+            <p><div class="row basic right"><a href="BLANK.html"><div class="button right" style="font-size: 22px">Checkout</div></a></div></p>
+        </div>
+    </div>
+
+  </div>
+</body>
+</html>

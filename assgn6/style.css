@@ -118,6 +118,11 @@ body {
 
 }
 
+.cart-image{
+  padding: 50px;
+  width: 200px;
+}
+
 /*********** HEADER ************/
 header {
 	text-align: center;
@@ -160,9 +165,16 @@ h1 {
 /*********** navigation bar ************/
 /*inspired by https://www.w3schools.com/css/css_dropdowns.asp */
 .dropdown {
+	float: none !important;
 	text-align: right;
+	position: relative;
 	display: inline-block;
-	padding-bottom: 40px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    padding: 5px 40px;
+    margin: 15px 30px;
 
 }
 

@@ -5,6 +5,8 @@
 	<title>Original</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- javascript -->
+    <script src="detail.js" type="text/javascript"></script> 
 </head>
 
 <body>
@@ -33,9 +35,13 @@
 
             <div class="row">
                 <label class="left basic bold" style="float:left">Quantity</label>
-                <div class="right basic dropdown" style="float:right">
-                    <button class="dropbtn"></button>
-                </div>
+                <select class="dropdown" id = "quantity" onchange="onQuantitySelect()">
+                    <option selected> </option>
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
             </div>
 
             <div class="row">
@@ -46,7 +52,7 @@
             </div>
 
             <div class="row">
-                <div class="left basic bold" style="float:right">Price $ --</div>
+                <div class="left basic bold" style="float:right">Price $ <span id="price">--</span></div>
             </div>
 
         </div>
