@@ -8,7 +8,7 @@ body {
 /*inspired by https://www.w3schools.com/howto/howto_css_mixed_columns.asp */
 .col3{
 	float:left;
-	width: 33%;
+	column-width: calc(33vw - 66px);
 }
 
 .col2{
@@ -119,8 +119,9 @@ body {
 }
 
 .cart-image{
-  padding: 50px;
+  padding: 0px 50px;
   width: 200px;
+  float: center;
 }
 
 /*********** HEADER ************/
@@ -165,7 +166,7 @@ h1 {
 /*********** navigation bar ************/
 /*inspired by https://www.w3schools.com/css/css_dropdowns.asp */
 .dropdown {
-	float: none !important;
+	float: right;
 	text-align: right;
 	position: relative;
 	display: inline-block;
@@ -173,8 +174,8 @@ h1 {
     -moz-appearance: none;
     appearance: none;
     font-size: 18px;
-    padding: 5px 40px;
-    margin: 15px 30px;
+    padding: 5px 20px;
+    margin: 20px 100px;
 
 }
 

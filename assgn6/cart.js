@@ -12,11 +12,6 @@ function onQuantitySelect() {
 	document.getElementById("price").innerHTML = p;
 }
 
-function onGlazingSelect() {
-  var g = document.getElementById("glazing");
-  var glaz = g.options[g.selectedIndex].text;
-}
-
 /*** Document Load ****/
 function onLoad() {
 

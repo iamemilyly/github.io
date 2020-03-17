@@ -25,7 +25,7 @@
     </header>
 
     <div class="row">
-        <div class="col2"><img src="img/o1.png" class="img-fluid" alt="img"></div>
+        <div class="col2"><img src="img/o1.png" class="img-fluid" alt="img" style="padding-bottom: 60px"></div>
 
         <div class="col2">
 
@@ -36,7 +36,7 @@
             <div class="row">
                 <label class="left basic bold" style="float:left">Quantity</label>
                 <select class="dropdown" id = "quantity" onchange="onQuantitySelect()">
-                    <option selected> </option>
+                    <option selected value="Select">Select</option>
                     <option value="1">1</option>
                     <option value="3">3</option>
                     <option value="6">6</option>
@@ -46,31 +46,24 @@
 
             <div class="row">
                 <label class="left basic bold" style="float:left">Glazing</label>
-                <div class="right basic dropdown" style="float:right">
-                    <button class="dropbtn" style="padding: 15px 100px"></button>
-                </div>
+                <select class="dropdown" id = "glazing" onchange="onGlazingSelect()">
+                    <option selected value="Select">Select</option>
+                    <option value="None">None</option>
+                    <option value="Sugar-milk">Sugar-milk</option>
+                    <option value="Vanilla-milk">Vanilla-milk</option>
+                    <option value="Double Chocolate">Double Chocolate</option>
+                </select>
             </div>
 
             <div class="row">
                 <div class="left basic bold" style="float:right">Price $ <span id="price">--</span></div>
             </div>
 
+            <div class="row basic right"><a href="cart.html"><div class="button right" style="font-size: 22px">Add to cart</div></a></div>
+
         </div>
 
 	</div>
-
-    <div class="row">
-        <div class="col2" style="padding-top:25px">
-            <img src="img/o2.png" class="img-fluid" alt="img">
-            <img src="img/o3.png" class="img-fluid" alt="img">
-            <img src="img/o4.png" class="img-fluid" alt="img">
-        </div>
-
-        <div class="col2" style="padding-top:25px">
-        <div class="row basic right"><a href="cart.html"><div class="button right" style="font-size: 22px">Add to cart</div></a></div>
-        </div>
-
-    </div>
 
     <hr style="width:90%">
 

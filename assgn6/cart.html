@@ -28,28 +28,38 @@
     <div class="row basic">
         <div class="col3"><img src="img/original.png" class="img-fluid cart-image" alt="img"></div>
 
-        <div class="col3" style="margin-left: 30vw; margin-top: -20vh;">
-            Original<br><br>
-            <span>glazing: <div id="glazing"></div>
-                quantity: <div id="qresult"></div></span>
+        <div class="col3">
+            <p>Original</p>
+            <p>glazing: <span><div id="glazing"></div>
+            quantity: <div id="qresult"></div></span></p>
         </div>
 
-        <div class="col3 right" style="margin-left: 60vw; margin-top: -22vh;">
+        <div class="col3 right" style="text-align: right">
             $<br><br>
-            <span>remove edit</span>
+            <span><u>remove</u></span>
+            <span><u>edit</u></span>
         </div>
     </div>
 
+    <footer>
     <div class="row">
         <div class="col3"></div>
         <div class="col3"></div>
-        <div class="col3 right">
-            <span>Subtotal $<div id="price"></div> </span>
-            <p><span>Tax $<div id="tax"></div> </span></p>
-            <p><span class="bold">Total $<div id="total-price"></div></span></p>
-            <p><div class="row basic right"><a href="BLANK.html"><div class="button right" style="font-size: 22px">Checkout</div></a></div></p>
+        <div class="col3 right" style="padding:10px 100px;">
+            <p>Subtotal
+                <span style="float:right">$<div id="price"></div></span>
+            </p>
+            <p><span style="padding-top: 15px">Tax</span>
+                <span style="float:right">$<div id="tax"></div> </span>
+            </p>
+            <hr>
+            <p><span class="bold" style="padding-top: 15px">Total</span>
+                <span style="float:right">$<div id="total-price"></div></span>
+            </p>
+            <p><div class="right"><a href="BLANK.html"><div class="button right" style="font-size: 22px">Checkout</div></a></div></p>
         </div>
     </div>
+    </footer>
 
   </div>
 </body>
