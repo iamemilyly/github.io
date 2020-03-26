@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-	<title>Original</title>
+	<title>Details</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- javascript -->
     <script src="detail.js" type="text/javascript"></script> 
+    <script src="cart.js" type="text/javascript"></script> 
 </head>
 
 <body>
@@ -29,7 +31,7 @@
 
         <div class="col2">
 
-            <div class="row title left" style="padding-top: 0px">Original</div>
+            <div class="row title left" id="type" style="padding-top: 0px">Original</div>
             
             <div class="row left basic">Your classic, home-style cinnamon rolls that are fluffy, soft, and topped with vanilla glaze</div>
 
@@ -59,7 +61,7 @@
                 <div class="left basic bold" style="float:right">Price $ <span id="price">--</span></div>
             </div>
 
-            <div class="row basic right"><a href="cart.html"><div class="button right" style="font-size: 22px">Add to cart</div></a></div>
+            <div class="row basic right"><a href="cart.html"><div class="button right" style="font-size: 22px" onclick="addItem()">Add to cart</div></a></div>
 
         </div>
 
