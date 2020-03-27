@@ -9,7 +9,7 @@
     <script src="cart.js" type="text/javascript"></script> 
 </head>
 
-<body>
+<body onload="onLoad()">
 	<div id="container">
     
     <header>
@@ -26,36 +26,116 @@
 
     <div class="row title" style="margin-top: 57px;">My Cart</div>
 
-    <div class="row basic">
-        <div class="col3"><img src="img/original.png" class="img-fluid cart-image" alt="img"></div>
+    <div class="row basic" id="Original" style="display:none">
+        <div class="col3"><img id="icon" src="img/Original.png" class="img-fluid cart-image" alt="img"></div>
 
         <div class="col3">
-            <p>Original</p>
-            <p>glazing: <span><div id="glazing"></div>
-            quantity: <div id="qresult"></div></span></p>
+            <p id="name">Original</p>
+            <p><i>glazing: </i><span><span id="OriginalG"></span>
+            <i>quantity: </i><span id="OriginalQ"></span></span></p>
         </div>
 
         <div class="col3 right" style="text-align: right">
-            $<br><br>
-            <span type="button" value = "remove" onclick="removeItem()"><u>remove</u></span>
+            $<span id="OriginalP"></span><br><br>
+            <span type="button" value = "remove" id="removeO"><u>remove</u></span>
             <span><u>edit</u></span>
         </div>
     </div>
 
-    <footer>
+    <div class="row basic" id="Blackberry" style="display:none">
+        <div class="col3"><img id="icon" src="img/Blackberry.png" class="img-fluid cart-image" alt="img"></div>
+
+        <div class="col3">
+            <p id="name">Blueberry</p>
+            <p><i>glazing: </i><span><span id="BlackberryG"></span>
+            <i>quantity: </i><span id="BlackberryQ"></span></span></p>
+        </div>
+
+        <div class="col3 right" style="text-align: right">
+            $<span id="BlackberryP"></span><br><br>
+            <span type="button" value = "remove" id="removeB"><u>remove</u></span>
+            <span><u>edit</u></span>
+        </div>
+    </div>
+
+    <div class="row basic" id="Walnut" style="display:none">
+        <div class="col3"><img id="icon" src="img/Walnut.png" class="img-fluid cart-image" alt="img"></div>
+
+        <div class="col3">
+            <p id="name">Walnut</p>
+            <p><i>glazing: </i><span><span id="WalnutG"></span>
+            <i>quantity: </i><span id="WalnutQ"></span></span></p>
+        </div>
+
+        <div class="col3 right" style="text-align: right">
+            $<span id="WalnutP"></span><br><br>
+            <span type="button" value = "remove" id="removeW"><u>remove</u></span>
+            <span><u>edit</u></span>
+        </div>
+    </div>
+
+    <div class="row basic" id="Original (Gluten-Free)" style="display:none">
+        <div class="col3"><img id="icon" src="img/Original (Gluten-free).png" class="img-fluid cart-image" alt="img"></div>
+
+        <div class="col3">
+            <p id="name">Original (Gluten-Free)</p>
+            <p><i>glazing: </i><span><span id="Original (Gluten-Free)G"></span>
+            <i>quantity: </i><span id="Original (Gluten-Free)Q"></span></span></p>
+        </div>
+
+        <div class="col3 right" style="text-align: right">
+            $<span id="Original (Gluten-Free)P"></span><br><br>
+            <span><input type="button" id="removeGF"><u>remove</u></input></span>
+            <span><u>edit</u></span>
+        </div>
+    </div>
+
+    <div class="row basic" id="Pumpkin Spice" style="display:none">
+        <div class="col3"><img id="icon" src="img/Pumpkin Spice.png" class="img-fluid cart-image" alt="img"></div>
+
+        <div class="col3">
+            <p id="name">Pumpkin Spice</p>
+            <p><i>glazing: </i><span><span id="Pumpkin SpiceG"></span>
+            <i>quantity: </i><span id="Pumpkin SpiceQ"></span></span></p>
+        </div>
+
+        <div class="col3 right" style="text-align: right">
+            $<span id="Pumpkin SpiceP"></span><br><br>
+            <span type="button" value = "remove" id="removeP"><u>remove</u></span>
+            <span><u>edit</u></span>
+        </div>
+    </div>
+
+    <div class="row basic" id="Caramel Pecan" style="display:none">
+        <div class="col3"><img id="icon" src="img/Caramel Pecan.png" class="img-fluid cart-image" alt="img"></div>
+
+        <div class="col3">
+            <p id="name">Caramel Pecan</p>
+            <p><i>glazing: </i><span><span id="Caramel PecanG"></span>
+            <i>quantity: </i><span id="Caramel PecanQ"></span></span></p>
+        </div>
+
+        <div class="col3 right" style="text-align: right">
+            $<span id="Caramel PecanP"></span><br><br>
+            <span type="button" value = "remove" id="removeC"><u>remove</u></span>
+            <span><u>edit</u></span>
+        </div>
+    </div>
+
+    <footer onload="onLoad()">
     <div class="row">
         <div class="col3"></div>
         <div class="col3"></div>
         <div class="col3 right" style="padding:10px 100px;">
             <p>Subtotal
-                <span style="float:right">$<div id="price"></div></span>
+                <span style="float:right">$<span id="price"></span></span>
             </p>
             <p><span style="padding-top: 15px">Tax</span>
-                <span style="float:right">$<div id="tax"></div> </span>
+                <span style="float:right">$<span id="tax"></span> </span>
             </p>
             <hr>
             <p><span class="bold" style="padding-top: 15px">Total</span>
-                <span style="float:right">$<div id="total-price"></div></span>
+                <span style="float:right">$<span id="total-price"></span></span>
             </p>
             <p><div class="right"><a href="BLANK.html"><div class="button right" style="font-size: 22px">Checkout</div></a></div></p>
         </div>
