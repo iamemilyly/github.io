@@ -83,6 +83,7 @@ function onLoad() {
     }
 
     localStorage.setItem("cart", JSON.stringify(dup));
+    location.reload();
   })
 
 document.getElementById("removeW").addEventListener("click", function(){
@@ -101,6 +102,7 @@ document.getElementById("removeW").addEventListener("click", function(){
     }
 
     localStorage.setItem("cart", JSON.stringify(dup));
+    location.reload();
   })
 
 document.getElementById("removeB").addEventListener("click", function(){
@@ -119,6 +121,7 @@ document.getElementById("removeB").addEventListener("click", function(){
     }
 
     localStorage.setItem("cart", JSON.stringify(dup));
+    location.reload();
   })
 
 document.getElementById("removeGF").addEventListener("click", function(){
@@ -137,6 +140,7 @@ document.getElementById("removeGF").addEventListener("click", function(){
     }
 
     localStorage.setItem("cart", JSON.stringify(dup));
+    location.reload();
   })
 
 document.getElementById("removeC").addEventListener("click", function(){
@@ -155,7 +159,7 @@ document.getElementById("removeC").addEventListener("click", function(){
     }
 
     localStorage.setItem("cart", JSON.stringify(dup));
-    onLoad();
+    location.reload();
   })
 
 document.getElementById("removeP").addEventListener("click", function(){
@@ -174,6 +178,7 @@ document.getElementById("removeP").addEventListener("click", function(){
     }
 
     localStorage.setItem("cart", JSON.stringify(dup));
+    location.reload();
   })
 
 };
